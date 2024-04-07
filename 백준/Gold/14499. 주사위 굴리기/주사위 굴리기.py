@@ -1,3 +1,5 @@
+#주사위 굴리는게 아닌 굴리고나서 위치 변화를 리스트에 저장하는 로직 익히기
+
 import sys
 
 n,m,x,y,k = map(int,sys.stdin.readline().rstrip().split())
