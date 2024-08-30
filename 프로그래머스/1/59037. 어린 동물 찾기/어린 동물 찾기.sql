@@ -1,0 +1,11 @@
+-- 코드를 입력하세요
+SELECT
+    A.ANIMAL_ID
+    , A.NAME
+FROM
+    ANIMAL_INS AS A
+WHERE
+    A.INTAKE_CONDITION != 'Aged'
+ORDER BY
+    A.ANIMAL_ID ASC
+    
