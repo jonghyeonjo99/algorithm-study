@@ -1,0 +1,15 @@
+-- 코드를 입력하세요
+SELECT
+    M.MEMBER_ID
+    , M.MEMBER_NAME
+    , M.GENDER
+    , DATE_FORMAT(M.DATE_OF_BIRTH, "%Y-%m-%d")
+FROM
+    MEMBER_PROFILE AS M
+WHERE
+    M.DATE_OF_BIRTH LIKE '%-03-%' AND
+    M.TLNO IS NOT NULL AND
+    M.GENDER = 'W'
+ORDER BY
+    M.MEMBER_ID ASC
+    
