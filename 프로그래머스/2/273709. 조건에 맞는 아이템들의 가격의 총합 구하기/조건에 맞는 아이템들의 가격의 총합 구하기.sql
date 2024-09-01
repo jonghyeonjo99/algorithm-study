@@ -1,0 +1,7 @@
+-- 코드를 작성해주세요
+SELECT
+    SUM(I.PRICE) AS TOTAL_PRICE
+FROM
+    ITEM_INFO AS I
+WHERE
+    I.RARITY = 'LEGEND'
