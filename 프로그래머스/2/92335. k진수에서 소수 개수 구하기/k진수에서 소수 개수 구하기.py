@@ -27,6 +27,5 @@ def solution(n, k):
         if number != '1' and number != '':
             if prime_number(number):
                 answer += 1
-        
-    
+
     return answer
