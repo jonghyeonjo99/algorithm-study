@@ -29,21 +29,11 @@ def bfs(x, y, land, visited, locate):
 def solution(land):
     answer = 0
     locate = [0 for _ in range(len(land[0]))]
-    # for i in range(len(land[0])):
-    #     temp = 0
-    #     visited = [[0 for _ in range(len(land[0]))] for _ in range(len(land))]
-    #     for j in range(len(land)):
-    #         # print(j,i)
-    #         # print("land = " + str(land[j][i]))
-    #         if land[j][i] == 1 and visited[j][i] == 0:
-    #             temp += bfs(j, i, land, visited)
-    #     # print(temp)
-    #     answer = max(answer, temp)
     visited = [[0 for _ in range(len(land[0]))] for _ in range(len(land))]
     for i in range(len(land[0])):
         for j in range(len(land)):
             if land[j][i] == 1 and visited[j][i] == 0:
                 bfs(j, i, land, visited, locate)
-    # print(locate)
+
     answer = max(locate)
     return answer
